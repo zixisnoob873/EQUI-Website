@@ -98,8 +98,8 @@ function LocationContent() {
                     <p className="font-mono text-[10px] text-cyber-yellow tracking-[0.3em] uppercase mb-1">
                       Hours Today
                     </p>
-                    <p className="font-mono text-sm text-cyber-white">
-                      {contact.operatingHours.weekdays}
+                    <p className="font-mono text-sm text-cyber-yellow font-bold">
+                      {contact.operatingHours.schedule || "24 / 7 / 365 DAYS"}
                     </p>
                   </div>
                 </div>

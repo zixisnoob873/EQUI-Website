@@ -18,12 +18,24 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-black tracking-[0.2em] text-cyber-gold text-glow-gold mb-3">
-              EQUI
-            </h3>
+            <div className="flex items-center gap-3 mb-3">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo.png"
+                alt="Equilibrium Gaming Logo"
+                className="h-12 w-auto object-contain"
+              />
+              <div>
+                <h3 className="font-display text-xl font-black tracking-[0.15em] text-cyber-gold text-glow-gold leading-none">
+                  EQUILIBRIUM
+                </h3>
+                <p className="font-mono text-[9px] text-cyber-yellow uppercase tracking-[0.3em] mt-1 font-bold">
+                  A TIER ABOVE
+                </p>
+              </div>
+            </div>
             <p className="font-mono text-xs text-cyber-ghost leading-relaxed max-w-xs">
-              Premium gaming lounge experience. Competitive rigs, immersive
-              setups, and a community built for gamers.
+              Premium gaming lounge experience. Tier 1-3 competitive rigs, PS5 console arena, and a non-stop 24/7 community built for gamers.
             </p>
           </div>
 

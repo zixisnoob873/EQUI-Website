@@ -101,8 +101,8 @@ export default function BranchesPage() {
                       {contact && (
                         <div className="flex items-center gap-3">
                           <span className="text-sm">🕒</span>
-                          <span className="font-mono text-xs text-cyber-ghost">
-                            {contact.operatingHours.weekdays}
+                          <span className="font-mono text-xs text-cyber-yellow font-bold">
+                            {contact.operatingHours.schedule || "24 / 7 / 365 DAYS"}
                           </span>
                         </div>
                       )}

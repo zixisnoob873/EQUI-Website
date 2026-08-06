@@ -126,44 +126,37 @@ function ContactContent() {
             </div>
           </HUDCard>
 
-          {/* Operating Hours Card */}
+          {/* Operating Hours Card - WE NEVER CLOSE! */}
           <HUDCard title="OPERATING HOURS" accentColor="gold">
-            <div className="space-y-6 py-2">
+            <div className="py-8 text-center flex flex-col items-center justify-center min-h-[320px]">
               <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="space-y-4"
+                className="space-y-1 my-auto"
               >
-                {[
-                  { label: "Weekdays", value: contact.operatingHours.weekdays, icon: "📅" },
-                  { label: "Weekends", value: contact.operatingHours.weekends, icon: "🎉" },
-                  ...(contact.operatingHours.holidays
-                    ? [{ label: "Holidays", value: contact.operatingHours.holidays, icon: "🎊" }]
-                    : []),
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex items-center justify-between border-b border-cyber-gunmetal/30 pb-4"
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className="text-xl">{item.icon}</span>
-                      <span className="font-mono text-xs text-cyber-ghost tracking-wider uppercase">
-                        {item.label}
-                      </span>
-                    </div>
-                    <span className="font-mono text-sm text-cyber-yellow font-semibold">
-                      {item.value}
-                    </span>
-                  </div>
-                ))}
+                <p className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-cyber-gold text-glow-gold tracking-[0.2em] leading-none uppercase">
+                  WE
+                </p>
+                <p className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-cyber-yellow text-glow-yellow tracking-[0.2em] leading-none uppercase my-2">
+                  NEVER
+                </p>
+                <p className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-cyber-white tracking-[0.15em] leading-none uppercase">
+                  CLOSE!
+                </p>
+
+                <div className="pt-6">
+                  <span className="inline-block bg-cyber-yellow/10 border border-cyber-yellow/40 text-cyber-yellow font-mono text-xs tracking-[0.3em] font-bold px-4 py-1.5 uppercase">
+                    24 / 7 / 365 DAYS
+                  </span>
+                </div>
               </motion.div>
 
-              <div className="bg-cyber-charcoal/50 border border-cyber-green/20 p-4 text-center mt-6">
+              <div className="w-full bg-cyber-charcoal/80 border border-cyber-green/40 p-3 text-center mt-6">
                 <div className="flex items-center justify-center gap-2">
-                  <span className="w-2 h-2 bg-cyber-green rounded-full animate-pulse" />
-                  <span className="font-mono text-xs text-cyber-green tracking-wider">
-                    CURRENTLY OPEN
+                  <span className="w-2.5 h-2.5 bg-cyber-green rounded-full animate-pulse" />
+                  <span className="font-mono text-xs text-cyber-green font-bold tracking-[0.2em]">
+                    SYSTEMS ONLINE — OPEN NOW
                   </span>
                 </div>
               </div>

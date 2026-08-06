@@ -51,12 +51,18 @@ export default function AdminLoginPage() {
         <div className="absolute -bottom-px -left-px w-4 h-4 border-b-2 border-l-2 border-cyber-yellow" />
         <div className="absolute -bottom-px -right-px w-4 h-4 border-b-2 border-r-2 border-cyber-yellow" />
 
-        <div className="text-center mb-8">
-          <h1 className="font-display text-3xl font-black text-cyber-gold text-glow-gold tracking-widest">
-            EQUI ADMIN
+        <div className="text-center mb-8 flex flex-col items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo.png"
+            alt="Equilibrium Gaming Logo"
+            className="h-20 w-auto object-contain mb-3 drop-shadow-[0_0_15px_rgba(245,166,35,0.4)]"
+          />
+          <h1 className="font-display text-2xl font-black text-cyber-gold text-glow-gold tracking-widest uppercase">
+            EQUILIBRIUM GAMING
           </h1>
-          <p className="font-mono text-xs text-cyber-ghost mt-2 tracking-wider">
-            AUTHENTICATION REQUIRED
+          <p className="font-mono text-[10px] text-cyber-yellow tracking-[0.3em] font-bold mt-1 uppercase">
+            — A TIER ABOVE • CONTROL CENTER —
           </p>
         </div>
 

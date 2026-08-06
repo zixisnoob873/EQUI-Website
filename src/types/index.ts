@@ -71,9 +71,10 @@ export interface Contact {
 }
 
 export interface OperatingHours {
-  weekdays: string;
-  weekends: string;
-  holidays: string | null;
+  schedule?: string;
+  status?: string;
+  weekdays?: string;
+  weekends?: string;
 }
 
 // --- Gallery ---

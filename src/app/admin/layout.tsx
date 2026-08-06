@@ -54,13 +54,21 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <aside className="w-full md:w-64 bg-cyber-charcoal border-r border-cyber-gunmetal/50 p-6 flex flex-col justify-between flex-shrink-0">
         <div>
           {/* Header */}
-          <div className="mb-8 pb-4 border-b border-cyber-gunmetal/50">
-            <h2 className="font-display text-lg font-black text-cyber-gold tracking-widest text-glow-gold">
-              EQUI ADMIN
-            </h2>
-            <p className="font-mono text-[10px] text-cyber-ghost mt-1">
-              LOGGED IN AS: <span className="text-cyber-yellow">{adminName || "ADMIN"}</span>
-            </p>
+          <div className="mb-8 pb-4 border-b border-cyber-gunmetal/50 flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo.png"
+              alt="Equilibrium Gaming Logo"
+              className="h-10 w-auto object-contain"
+            />
+            <div>
+              <h2 className="font-display text-base font-black text-cyber-gold tracking-widest text-glow-gold leading-none">
+                EQUILIBRIUM
+              </h2>
+              <p className="font-mono text-[9px] text-cyber-yellow tracking-[0.2em] font-bold mt-1">
+                ADMIN CONTROL
+              </p>
+            </div>
           </div>
 
           {/* Nav Links */}

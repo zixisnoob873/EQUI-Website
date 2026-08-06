@@ -70,27 +70,41 @@ export default function HomePage() {
             </span>
           </motion.div>
 
-          {/* Title */}
-          <motion.h1
-            initial={{ opacity: 0, scale: 0.9 }}
+          {/* Official Logo Display */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-[0.15em] text-cyber-gold text-glow-gold mb-4"
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="flex flex-col items-center justify-center mb-6"
           >
-            EQUI
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo.png"
+              alt="Equilibrium Gaming Logo"
+              className="h-32 sm:h-44 md:h-52 w-auto object-contain drop-shadow-[0_0_25px_rgba(245,166,35,0.4)]"
+            />
+          </motion.div>
+
+          {/* Title & Tagline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[0.15em] text-cyber-gold text-glow-gold mb-2"
+          >
+            EQUILIBRIUM
           </motion.h1>
 
-          {/* Tagline */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <p className="font-mono text-sm sm:text-base text-cyber-ghost tracking-[0.5em] uppercase mb-2">
-              PREMIUM GAMING LOUNGE
+            <p className="font-mono text-sm sm:text-base text-cyber-yellow tracking-[0.5em] uppercase font-bold mb-1">
+              — A TIER ABOVE —
             </p>
-            <p className="font-mono text-xs text-cyber-steel tracking-[0.3em]">
-              GULBERG 3 • AIRLINE SOCIETY • LAHORE
+            <p className="font-mono text-xs text-cyber-ghost tracking-[0.3em] uppercase">
+              PREMIUM GAMING LOUNGE • GULBERG 3 & AIRLINE SOCIETY, LAHORE
             </p>
           </motion.div>
 

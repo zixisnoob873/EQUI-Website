@@ -160,22 +160,22 @@ export default function AdminContactPage() {
 
           <div className="pt-4 border-t border-cyber-gunmetal/40">
             <h4 className="font-mono text-xs font-bold text-cyber-yellow uppercase mb-3">
-              Operating Hours
+              Operating Hours (24/7/365 Config)
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block font-mono text-[10px] text-cyber-ghost uppercase mb-1">
-                  Weekdays
+                  Schedule Banner
                 </label>
                 <input
                   type="text"
-                  value={contact.operatingHours.weekdays}
+                  value={contact.operatingHours.schedule || "24 / 7 / 365 DAYS"}
                   onChange={(e) =>
                     setContact((prev) =>
                       prev
                         ? {
                             ...prev,
-                            operatingHours: { ...prev.operatingHours, weekdays: e.target.value },
+                            operatingHours: { ...prev.operatingHours, schedule: e.target.value },
                           }
                         : prev
                     )
@@ -186,17 +186,17 @@ export default function AdminContactPage() {
 
               <div>
                 <label className="block font-mono text-[10px] text-cyber-ghost uppercase mb-1">
-                  Weekends
+                  Operating Status Text
                 </label>
                 <input
                   type="text"
-                  value={contact.operatingHours.weekends}
+                  value={contact.operatingHours.status || "OPEN 24 HOURS • 7 DAYS A WEEK • 365 DAYS A YEAR"}
                   onChange={(e) =>
                     setContact((prev) =>
                       prev
                         ? {
                             ...prev,
-                            operatingHours: { ...prev.operatingHours, weekends: e.target.value },
+                            operatingHours: { ...prev.operatingHours, status: e.target.value },
                           }
                         : prev
                     )

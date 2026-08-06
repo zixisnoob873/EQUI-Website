@@ -111,9 +111,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'gulberg@equigaming.pk',
             'whatsapp' => '+923211234567',
             'operating_hours' => [
-                'weekdays' => '12:00 PM – 2:00 AM',
-                'weekends' => '10:00 AM – 4:00 AM',
-                'holidays' => '10:00 AM – 4:00 AM',
+                'schedule' => '24 / 7 / 365 DAYS',
+                'status' => 'OPEN 24 HOURS • 7 DAYS A WEEK • 365 DAYS A YEAR',
             ],
         ]);
 
@@ -125,9 +124,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'airline@equigaming.pk',
             'whatsapp' => '+923337654321',
             'operating_hours' => [
-                'weekdays' => '1:00 PM – 1:00 AM',
-                'weekends' => '11:00 AM – 3:00 AM',
-                'holidays' => '11:00 AM – 3:00 AM',
+                'schedule' => '24 / 7 / 365 DAYS',
+                'status' => 'OPEN 24 HOURS • 7 DAYS A WEEK • 365 DAYS A YEAR',
             ],
         ]);
 

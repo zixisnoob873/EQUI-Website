@@ -21,10 +21,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "EQUI Gaming — Enter the Arena",
+  title: "Equilibrium Gaming — A Tier Above",
   description:
-    "Premium gaming lounge experience. Tiered PC setups, PS5 consoles, and competitive gaming — now at Gulberg 3 and Airline Society, Lahore.",
+    "Equilibrium Gaming — Premium gaming lounge experience in Lahore (Gulberg 3 & Airline Society). Tier 1-3 competitive PC setups, PS5 arena, 24/7 non-stop gaming.",
   keywords: [
+    "Equilibrium Gaming",
     "gaming lounge",
     "gaming cafe",
     "Lahore",
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     "PS5",
     "EQUI",
     "esports",
+    "A Tier Above",
   ],
 };
 
