@@ -140,7 +140,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== FEATURES SECTION ===== */}
-      <section className="relative py-24 sm:py-32 bg-metallic-subtle bg-grid">
+      <section className="relative py-24 sm:py-32 bg-cyber-black/60 backdrop-blur-xs bg-grid">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
             title="WHAT WE OFFER"
@@ -168,7 +168,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== STATS SECTION ===== */}
-      <section className="relative py-20 bg-cyber-void border-t border-b border-cyber-yellow/10">
+      <section className="relative py-20 bg-cyber-void/70 backdrop-blur-xs border-t border-b border-cyber-yellow/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -198,7 +198,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== CTA SECTION ===== */}
-      <section className="relative py-24 bg-metallic bg-grid overflow-hidden">
+      <section className="relative py-24 bg-cyber-black/70 backdrop-blur-xs bg-grid overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <SectionTitle
             title="READY TO PLAY?"

@@ -27,7 +27,7 @@ function ContactContent() {
   }
 
   return (
-    <div className="min-h-screen bg-metallic-subtle bg-grid pt-24 pb-16">
+    <div className="min-h-screen bg-cyber-black/70 backdrop-blur-xs bg-grid pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="CONTACT US" subtitle="Get in touch — we are here to help" />
 

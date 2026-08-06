@@ -21,7 +21,7 @@ function RotatingIcosahedron() {
         color="#f5a623"
         wireframe
         transparent
-        opacity={0.15}
+        opacity={0.18}
       />
     </mesh>
   );
@@ -58,9 +58,9 @@ function FloatingParticles() {
     <points ref={pointsRef} geometry={geometry}>
       <pointsMaterial
         color="#f5a623"
-        size={0.03}
+        size={0.035}
         transparent
-        opacity={0.4}
+        opacity={0.45}
         sizeAttenuation
       />
     </points>
@@ -73,7 +73,7 @@ function GridPlane() {
   useEffect(() => {
     if (gridRef.current) {
       const material = gridRef.current.material as THREE.Material;
-      material.opacity = 0.08;
+      material.opacity = 0.1;
       material.transparent = true;
     }
   }, []);
@@ -89,7 +89,7 @@ function GridPlane() {
 
 export function CyberBackground() {
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="fixed inset-0 z-0 pointer-events-none">
       <Canvas
         camera={{ position: [0, 0, 6], fov: 60 }}
         dpr={[1, 1.5]}
